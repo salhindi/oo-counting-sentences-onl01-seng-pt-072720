@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     array = [".", "?", "!"]
-self.split[].count
+self.split[/.!?/].count
 if self.empty
   return "0"
 end
