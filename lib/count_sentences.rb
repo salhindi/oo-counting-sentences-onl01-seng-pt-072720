@@ -15,6 +15,9 @@ class String
     end
 
   def count_sentences
-self.split[".","!","?"]
+self.split[".","!","?"].count
+if self.empty
+  return "0"
+end
   end
 end
